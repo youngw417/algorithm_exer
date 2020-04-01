@@ -9,7 +9,7 @@ test('returns the number of vowels used', () => {
 });
 
 test('returns the number of vowels used when they are capitalized', () => {
-  expect(vowels('AEIOU')).toEqual(5);
+  expect(vowels('AEIOUU')).toEqual(6);
 });
 
 test('returns the number of vowels used', () => {

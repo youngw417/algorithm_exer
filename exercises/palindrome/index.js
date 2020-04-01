@@ -6,7 +6,36 @@
 // --- Examples:
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
+function palindrome(str) {
+  return str
+    .split('')
+    .every((char, index) => char === str[str.length - 1 - index]);
+}
 
-function palindrome(str) {}
+// function palindrome(str) {
+//   const revStr = str
+//     .split('')
+//     .reverse()
+//     .join('');
 
+//   return str === revStr;
+// }
+
+// function palindrome(str) {
+//   const revStr = str
+//     .split('')
+//     .reverse()
+//     .join('');
+
+//   return str === revStr;
+// }
+
+// function palindrome(str) {
+//   let revStr = '';
+//   for (let char of str) {
+//     revStr = char + revStr;
+//   }
+//   if (revStr === str) return true;
+//   else return false;
+// }
 module.exports = palindrome;
